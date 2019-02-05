@@ -1,0 +1,41 @@
+<div class="login-page">
+    <div class="content">
+        <form class="login-form" [formGroup]="form" (submit)="onSubmit(form.value)" 
+        [@scaleOut]="currentState"
+        (@scaleOut.done)="onLoginFormDone($event)">
+            
+            <div class="text-center">
+                <img src="../../assets/images/Logo.png">
+            </div>
+            <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Username"
+                            formControlName="username" maxlength="10">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput type="password" placeholder="Password"
+                        formControlName="password" maxlength="10">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <button mat-raised-button color="primary" class="w-100"
+                        id="submit" 
+                        type="submit"
+                        [class.loading-button]="loading"
+                        [disabled]="form.invalid">Login</button>
+                </div>
+            </div>
+        </form>
+        <div class="loading-spinner" *ngIf="loading">
+            <mat-progress-spinner mode="indeterminate" class="spinner"
+            ></mat-progress-spinner>
+        </div>
+    </div>
+</div>
