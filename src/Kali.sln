@@ -1,33 +1,35 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28531.58
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.Web", "8.Web", "{BB85D6C9-BA92-44FC-BE99-71795BFB98EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kali.WebApi", "Kali.WebApi\Kali.WebApi.csproj", "{051C114B-9FE4-40FC-AB74-1DBC4C00D0EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.WebApi", "Kali.WebApi\Kali.WebApi.csproj", "{051C114B-9FE4-40FC-AB74-1DBC4C00D0EE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Common", "0.Common", "{F955D02C-6FFF-45D3-939B-89B26F88482A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kali.Common", "Kali.Common\Kali.Common.csproj", "{653FBC3A-585F-4C1B-8276-60AD61ACBD9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.Common", "Kali.Common\Kali.Common.csproj", "{653FBC3A-585F-4C1B-8276-60AD61ACBD9A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Domain", "1.Domain", "{B9F8C179-6797-422C-B0BB-1C179C16D04A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kali.Domain", "Kali.Domain\Kali.Domain.csproj", "{C32FBABC-5048-449D-BB45-60EE636DD5C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.Domain", "Kali.Domain\Kali.Domain.csproj", "{C32FBABC-5048-449D-BB45-60EE636DD5C9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.DataAccess", "2.DataAccess", "{13558CB7-EB73-487C-888C-7CAB8985CB9B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Model", "3.Model", "{0C9AE878-8E9E-4415-B7B3-532BB9A793BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kali.Model", "Kali.Model\Kali.Model.csproj", "{8815CBC4-8B00-4FDD-B0BB-768910DC8610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.Model", "Kali.Model\Kali.Model.csproj", "{8815CBC4-8B00-4FDD-B0BB-768910DC8610}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Security", "4.Security", "{73996075-C4A2-4FE6-B6AD-9E586F263DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kali.Security", "Kali.Security\Kali.Security.csproj", "{92D93D46-3B66-46E0-9A91-D3BAC1CC66AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.Security", "Kali.Security\Kali.Security.csproj", "{92D93D46-3B66-46E0-9A91-D3BAC1CC66AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Workflow", "6.Workflow", "{490DF552-4344-400C-9072-0C61874CD0DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kali.Workflow", "Kali.Workflow\Kali.Workflow.csproj", "{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.Workflow", "Kali.Workflow\Kali.Workflow.csproj", "{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{8815CBC4-8B00-4FDD-B0BB-768910DC8610} = {0C9AE878-8E9E-4415-B7B3-532BB9A793BA}
 		{92D93D46-3B66-46E0-9A91-D3BAC1CC66AB} = {73996075-C4A2-4FE6-B6AD-9E586F263DFA}
 		{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E} = {490DF552-4344-400C-9072-0C61874CD0DC}
+		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9} = {BB85D6C9-BA92-44FC-BE99-71795BFB98EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F387BC7-B963-4CE7-850A-662790A97AB3}

@@ -27,5 +27,5 @@ RUN dotnet publish "Kali.WebApi.csproj" -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-RUN powershell -Command Remove-Item -Recurse C:\app\wwwroot\*
+COPY Kali.ClientWeb/dist c:/app/wwwroot
 ENTRYPOINT ["dotnet", "Kali.WebApi.dll"]
