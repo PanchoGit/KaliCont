@@ -1,0 +1,8 @@
+version: '1'
+
+services:
+ kaliapp:
+    image: microsoft/dotnet:2.2-aspnetcore-runtime-nanoserver-1803
+    build: .
+    ports:
+      - "80:80"
