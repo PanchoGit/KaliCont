@@ -1,0 +1,12 @@
+FROM microsoft/dotnet:2.2-sdk-nanoserver-1803 AS build
+WORKDIR /src
+COPY ./src .
+RUN dotnet restore "Kali.WebApi/Kali.WebApi.csproj"
+RUN dotnet publish "Kali.WebApi/Kali.WebApi.csproj" -c Release -o /app
+
+# FROM microsoft/dotnet:2.2-aspnetcore-runtime-nanoserver-1803
+# WORKDIR /app
+# EXPOSE 80
+# EXPOSE 443
+# COPY . .
+# ENTRYPOINT ["dotnet", "Kali.WebApi.dll"]

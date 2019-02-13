@@ -1,0 +1,38 @@
+# Windows Container -> Set the "experimental": true
+# FROM node:10-alpine as build-node
+# FROM microsoft/powershell AS build-dotnet
+# FROM microsoft/dotnet:2.2-sdk AS build-node
+# FROM microsoft/dotnet:2.2-sdk-nanoserver-1803 AS build-node
+# FROM microsoft/nanoserver AS build-node
+FROM node AS build-node
+WORKDIR /ClientApp
+
+# CMD ["Invoke-WebRequest", "-uri 'https://nodejs.org/dist/v10.15.1-x64/node-v10.15.1-x64.msi' -outfile node-v10.15.1-x64.msi -verbose"]
+# CMD ["node-v10.15.1-x64.msi"]
+# RUN powershell -Command Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+# COPY nodejs_installer.ps1 .
+# CMD [powershell.exe, -NoProfile, -ExecutionPolicy, unrestricted, -Command, "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin]
+
+RUN choco install nodejs.install
+# CMD [powershell.exe, nodejs_installer.ps1]
+# RUN npm install -g @angular/cli
+
+# COPY ./Kali.ClientWeb/ .
+
+# RUN npm install
+# RUN ng build --prod
+
+# FROM microsoft/dotnet:2.2-sdk-nanoserver-1803 AS build
+# WORKDIR /src
+# COPY . .
+# RUN dotnet restore "Kali.WebApi/Kali.WebApi.csproj"
+# COPY --from=build-node /ClientApp/dist ./Kali.WebApi/wwwroot
+# RUN dotnet publish "Kali.WebApi/Kali.WebApi.csproj" -c Release -o /app
+
+# FROM microsoft/dotnet:2.2-aspnetcore-runtime-nanoserver-1803
+# WORKDIR /app
+# EXPOSE 80
+# EXPOSE 443
+# COPY . .
+# ENTRYPOINT ["dotnet", "Kali.WebApi.dll"]

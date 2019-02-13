@@ -1,0 +1,11 @@
+FROM microsoft/nanoserver-insider-powershell AS build-dotnet
+# FROM microsoft/powershell AS build-dotnet
+WORKDIR /ClientApp
+
+RUN Invoke-WebRequest -uri 'https://nodejs.org/dist/v10.15.1-x64/node-v10.15.1-x64.msi' -outfile node-v10.15.1-x64.msi -verbose
+CMD ["node-v10.15.1-x64.msi"]
+# CMD [powershell.exe, -NoProfile, -ExecutionPolicy, unrestricted, -Command, "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin]
+CMD ["npm", "install -g @angular/cli"]
+COPY ./Kali.ClientWeb/ .
+CMD ["npm", "install"]
+CMD ["npm", "run build"]
