@@ -17,6 +17,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Kali.Security;
 using Kali.WebApi.Filters;
 using Kali.WebApi.Infrastructures;
+using Kali.WebApi.Extensions.Swagger;
 
 namespace Kali.WebApi
 {
@@ -34,6 +35,8 @@ namespace Kali.WebApi
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDefaultSwagger(GetType().Assembly, "v1");
 
             services.AddOptions();
 
@@ -101,6 +104,7 @@ namespace Kali.WebApi
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
             app.UseMvc();
+            app.UseDefaultSwagger("v1");
             app.UseSpa(spa =>
             {
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,

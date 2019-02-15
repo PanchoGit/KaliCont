@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28531.58
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.Web", "8.Web", "{BB85D6C9-BA92-44FC-BE99-71795BFB98EE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Web", "6.Web", "{BB85D6C9-BA92-44FC-BE99-71795BFB98EE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.WebApi", "Kali.WebApi\Kali.WebApi.csproj", "{051C114B-9FE4-40FC-AB74-1DBC4C00D0EE}"
 EndProject
@@ -25,11 +25,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Security", "4.Security", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.Security", "Kali.Security\Kali.Security.csproj", "{92D93D46-3B66-46E0-9A91-D3BAC1CC66AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Workflow", "6.Workflow", "{490DF552-4344-400C-9072-0C61874CD0DC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Workflow", "5.Workflow", "{490DF552-4344-400C-9072-0C61874CD0DC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.Workflow", "Kali.Workflow\Kali.Workflow.csproj", "{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.Test", "7.Test", "{B46C8E78-7FF2-4DDD-AEE7-0B6951BEC04B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kali.UnitTest", "Kali.UnitTest\Kali.UnitTest.csproj", "{8F71F83C-746F-4AA8-BA86-9C0DEC3FE5F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,10 @@ Global
 		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F71F83C-746F-4AA8-BA86-9C0DEC3FE5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F71F83C-746F-4AA8-BA86-9C0DEC3FE5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F71F83C-746F-4AA8-BA86-9C0DEC3FE5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F71F83C-746F-4AA8-BA86-9C0DEC3FE5F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +85,7 @@ Global
 		{92D93D46-3B66-46E0-9A91-D3BAC1CC66AB} = {73996075-C4A2-4FE6-B6AD-9E586F263DFA}
 		{3CA3DCB7-1DFC-4F62-96BE-AD5D87C2608E} = {490DF552-4344-400C-9072-0C61874CD0DC}
 		{33EC3D1D-D43B-4744-81F9-4002C3B38EB9} = {BB85D6C9-BA92-44FC-BE99-71795BFB98EE}
+		{8F71F83C-746F-4AA8-BA86-9C0DEC3FE5F4} = {B46C8E78-7FF2-4DDD-AEE7-0B6951BEC04B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F387BC7-B963-4CE7-850A-662790A97AB3}
