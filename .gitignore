@@ -331,3 +331,4 @@ ASALocalRun/
 wwwroot
 dist
 deploys
+.sonarqube
